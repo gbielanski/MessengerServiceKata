@@ -3,3 +3,4 @@
 2. Add ServiceConnection
 3. Create Messenger in ServiceConnection and set mBound flag
 4. Add MessengerService
+5. Add IncomingHandler as MessengerService inner class
