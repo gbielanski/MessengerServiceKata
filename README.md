@@ -8,3 +8,4 @@
 7. Create final Messenger in MessengerService
 8. Implement onBind. Return Messenger and show toast that service is bound
 9. Bind onStart and unbind onStop
+10. Add sayHello method. Send message to Service

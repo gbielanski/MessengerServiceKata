@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 
 public class MessengerService extends Service {
-	private static final int MSG_SAY_HALLO = 1;
+	static final int MSG_SAY_HALLO = 1;
 
 	class IncommingHandler extends Handler {
 
