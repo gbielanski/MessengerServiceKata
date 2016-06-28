@@ -5,3 +5,4 @@
 4. Add MessengerService
 5. Add IncomingHandler as MessengerService inner class
 6. Show Toast in handlerMessage method in IncomingHandler class
+7. Create final Messenger in MessengerService

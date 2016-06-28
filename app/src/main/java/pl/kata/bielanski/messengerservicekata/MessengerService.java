@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.Message;
+import android.os.Messenger;
 import android.widget.Toast;
 
 
@@ -24,6 +25,8 @@ public class MessengerService extends Service {
 			}
 		}
 	}
+
+	final Messenger mMessenger = new Messenger(new IncommingHandler());
 
 	@Override
 	public IBinder onBind(Intent intent) {
