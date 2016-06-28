@@ -6,3 +6,5 @@
 5. Add IncomingHandler as MessengerService inner class
 6. Show Toast in handlerMessage method in IncomingHandler class
 7. Create final Messenger in MessengerService
+8. Implement onBind. Return Messenger and show toast that service is bound
+9. Bind onStart and unbind onStop

@@ -30,6 +30,7 @@ public class MessengerService extends Service {
 
 	@Override
 	public IBinder onBind(Intent intent) {
-		throw new UnsupportedOperationException("Not yet implemented");
+		Toast.makeText(getApplicationContext(), "Service bound", Toast.LENGTH_LONG).show();
+		return mMessenger.getBinder();
 	}
 }

@@ -1,6 +1,8 @@
 package pl.kata.bielanski.messengerservicekata;
 
 import android.content.ComponentName;
+import android.content.Context;
+import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.IBinder;
 import android.os.Messenger;
@@ -31,4 +33,19 @@ public class MainActivity extends AppCompatActivity {
 			mBound = false;
 		}
 	};
+
+	@Override
+	protected void onStart() {
+		super.onStart();
+		bindService(new Intent(this, MessengerService.class), mConnection, Context.BIND_AUTO_CREATE);
+	}
+
+	@Override
+	protected void onStop() {
+		super.onStop();
+		if(mBound){
+			unbindService(mConnection);
+			mBound = false;
+		}
+	}
 }
